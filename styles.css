@@ -1,0 +1,40 @@
+ul{
+    list-style: none;
+}
+
+.section-nav{
+    background-color: aquamarine;
+}
+
+.menu-de-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-nav__lista{
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.presentacion{
+    text-align: center;
+}
+
+.presentacion__lista{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre-mi{
+    background-color: bisque;
+}
+.sobre-mi__container{
+    width: 80%;
+    margin: auto;
+}
