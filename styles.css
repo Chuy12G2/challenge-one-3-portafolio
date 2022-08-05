@@ -38,3 +38,66 @@ a{
     width: 80%;
     margin: auto;
 }
+
+.skills-hobbies{
+    text-align: center;
+}
+
+.skills-container, .hoobbies-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-card, .hobbies-card{
+    height: 150px;
+    width: 150px;
+    outline: 2px solid greenyellow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ion-icon {
+    font-size: 64px;
+  }
+
+  .formacion-container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .formacion-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    outline: 2px solid salmon;
+  }
+
+  .formacion-card img{
+    width: 250px;
+    height: 150px;
+    padding: 20px 0;
+  }
+
+  .proyecto{
+    display: flex;
+  }
+
+  .proyecto__imagenes{
+    width: 60%;
+    outline: 2px solid blue;
+  }
+
+  .proyecto__imagenes img{
+    width: 45%;
+  }
+
+  .proyecto__descripcion{
+    width: 39%;
+    outline: 2px solid blue;
+
+  }

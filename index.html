@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    
 </head>
 <body>
     <section class="section-nav">
@@ -25,6 +28,8 @@
     </section>
 
     <section class="presentacion">
+        
+        <i class="fa-solid fa-arrow-down-1-9"></i>
         <h1>Hola mi nombre es Jesùs Gòmez y construyo pàginas Web</h1>
         <p>Soy un desarrollador web y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam</p>
         <ul class="presentacion__lista">
@@ -46,21 +51,117 @@
     <section class="skills-hobbies">
         <div>
             <h2>Skills</h2>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="skills-container">
+                <div class="skills-card">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <span>Javascript</span>
+                </div>
+                <div class="skills-card">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <span>HTML</span>
+                </div>
+                <div class="skills-card">
+                    <ion-icon name="logo-css3"></ion-icon>
+                        <span>CSS</span>
+                </div>
+                <div class="skills-card">
+                    <ion-icon name="logo-nodejs"></ion-icon>
+                    <span>Node js</span>
+                </div>
+                <!-- <div class="skills-card">
+                    <ion-icon name="logo-figma"></ion-icon>
+                    <span>Figma</span>
+                </div> -->
+                <div class="skills-card">
+                    <ion-icon name="logo-react"></ion-icon>
+                    <span>React</span>
+                </div>            
+            </div>
+
+            <h2>Hobbies</h2>
+            <div class="hoobbies-container">
+                <div class="hobbies-card">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                    <span>Jugar Videojuegos</span>
+                </div>
+                <div class="hobbies-card">
+                    <ion-icon name="musical-notes-outline"></ion-icon>
+                    <span>Escuchar mùsica</span>
+                </div>
+                <div class="hobbies-card">
+                    <ion-icon name="barbell-outline"></ion-icon>
+                        <span>Hacer Ejercicio</span>
+                </div>
+                <div class="hobbies-card">
+                    <ion-icon name="code-working-outline"></ion-icon>
+                    <span>Programar</span>
+                </div>
+                
+                <div class="hobbies-card">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    <span>Ver pelìculas</span>
+                </div>            
             </div>
         </div>
         <div></div>
     </section>
 
 
-    <section></section>
-    <section></section>
+    <section class="formacion-profesional">
+        <h2>Formacion Academica</h2>
+        <div class="formacion-container">
+            <div class="formacion-card">
+                <img src="img/Logov3-02.png" alt="Logo Universidad">
+                <span>Ingenierìa Mecatrònica</span>
+                <span>2017 - 2021 </span>
+                <span>Universidad Tecnologica El Retoño</span>
+            </div>
+            <div class="formacion-card">
+                <img src="img/63c9b236-e805-44dd-9035-da2f7aa2fd5f.webp" alt="Logo Oracle ONE">
+                <span>Desarrollador Full Stack</span>
+                <span>2022</span>
+                <span>Oracle Next Education</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="Proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <div class="proyecto__imagenes">
+                <img src="img/Screenshot_Encriptador_1.png" alt="">
+                <img src="img/Screenshoot_Encrptador_2.png" alt="">
+            </div>
+            <div class="proyecto__descripcion">
+                <p>Encriptado de Texto</p>
+                <p>Challenge Oracle</p>
+                <button>Repositorio</button>
+                <button>Ver Demo</button>
+            </div>
+            
+        </div>
+
+
+        <div class="proyecto">
+            <div class="proyecto__imagenes">
+                <img src="img/Screenshot_Etch_1.png" alt="">
+                <img src="img/Screenshot_Etch_2.png" alt="">
+            </div>
+            <div class="proyecto__descripcion">
+                <p>Etch a Sketch</p>
+                <p>The Odin Project</p>
+                <button>Repositorio</button>
+                <button>Ver Demo</button>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
     <section></section>
 </body>
 </html>
