@@ -16,40 +16,39 @@
             <div class="section-nav-nombre">Jesus Gòmez</div>
             <div class="section-nav-etiquetas">
                 <ul class="section-nav__lista">
-                    <li>Sobre mì</li>
-                    <li>Skills</li>
-                    <li>Hobbies</li>
-                    <li>Formaciòn</li>
-                    <li>Proyectos</li>
-                    <li>jesus.gomez.sanchez.321@gmail.com</li>
+                    <a href="#"><li>Sobre mì</li></a>
+                    <a href="#"><li>Skills</li></a>
+                    <a href="#"><li>Hobbies</li></a>
+                    <a href="#"><li>Formaciòn</li></a>
+                    <a href="#"><li>Proyectos</li></a>
+                    <a href="#"><li>jesus.gomez.sanchez.321@gmail.com</li></a>
                 </ul>
             </div>
         </nav>
     </section>
 
-    <section class="presentacion">
-        
-        <i class="fa-solid fa-arrow-down-1-9"></i>
-        <h1>Hola mi nombre es Jesùs Gòmez y construyo pàginas Web</h1>
-        <p>Soy un desarrollador web y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam</p>
-        <ul class="presentacion__lista">
-            <a href="#"><li>Github</li></a> 
-            <a href="#"><li>LinkedIn</li></a> 
-            <a href="#"><li>Instagram</li></a> 
-            <a href="#"><li>Curriculum</li></a> 
-            
-        </ul>
+    <section class="section-presentacion">
+        <div class="presentacion">
+            <h1 class="encabezado-presentacion">Hola mi nombre es  y construyo pàginas Web</h1>
+            <p class="para-presentacion">Soy un desarrollador web y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam</p>
+            <ul class="presentacion__lista">
+                <a href="#"><li>Github</li></a> 
+                <a href="#"><li>LinkedIn</li></a> 
+                <a href="#"><li>Instagram</li></a> 
+                <a href="#"><li>Curriculum</li></a> 
+            </ul>
+        </div>
     </section>
 
     <section class="sobre-mi">
         <div class="sobre-mi__container">
-            <h2>Sobre mì</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint saepe doloribus quia ad, minima temporibus est dolorum blanditiis repellendus suscipit fugit quod ex pariatur aliquam voluptate, iusto dignissimos architecto!</p>
+            <h2 class="encabezado-sobre-mi">Sobre mì</h2>
+            <p class="para-sobre-mi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint saepe doloribus quia ad, minima temporibus est dolorum blanditiis repellendus suscipit fugit quod ex pariatur aliquam voluptate, iusto dignissimos architecto!</p>
         </div>
     </section>
 
     <section class="skills-hobbies">
-        <div>
+        <div class="skills-hobbies-container">
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skills-card">
@@ -103,12 +102,11 @@
                 </div>            
             </div>
         </div>
-        <div></div>
     </section>
 
 
     <section class="formacion-profesional">
-        <h2>Formacion Academica</h2>
+        <h2 class="encabezado-formacion">Formacion Academica</h2>
         <div class="formacion-container">
             <div class="formacion-card">
                 <img src="img/Logov3-02.png" alt="Logo Universidad">
@@ -127,41 +125,75 @@
 
 
 
-    <section class="Proyectos">
-        <h2>Proyectos</h2>
+    <section class="section-proyectos">
+        <h2 class="encabezado-proyectos">Proyectos</h2>
         <div class="proyecto">
             <div class="proyecto__imagenes">
+                <div>
                 <img src="img/Screenshot_Encriptador_1.png" alt="">
-                <img src="img/Screenshoot_Encrptador_2.png" alt="">
+                </div>
+                <!-- <img src="img/Screenshoot_Encrptador_2.png" alt=""> -->
             </div>
             <div class="proyecto__descripcion">
-                <p>Encriptado de Texto</p>
-                <p>Challenge Oracle</p>
-                <button>Repositorio</button>
-                <button>Ver Demo</button>
+                
+                <p class="proyecto-titulo"> Encriptador de Texto</p>
+                <p class="proyecto-origen"> Challenge Oracle</p>
+                <div class="proyecto-botones">
+                <a href="#"><button class="btn-repositorio btn">Repositorio</button></a> 
+                <a href="#"><button class="btn-demo btn">Ver Demo</button></a> 
+                </div>
             </div>
             
         </div>
 
 
         <div class="proyecto">
-            <div class="proyecto__imagenes">
-                <img src="img/Screenshot_Etch_1.png" alt="">
-                <img src="img/Screenshot_Etch_2.png" alt="">
-            </div>
             <div class="proyecto__descripcion">
-                <p>Etch a Sketch</p>
-                <p>The Odin Project</p>
-                <button>Repositorio</button>
-                <button>Ver Demo</button>
+                <p class="proyecto-titulo">Etch a Sketch</p>
+                <p class="proyecto-origen">The Odin Project</p>
+                <div class="proyecto-botones">
+                    <a href="#"><button class="btn-repositorio btn">Repositorio</button></a> 
+                    <a href="#"><button class="btn-demo btn">Ver Demo</button></a> 
+                </div>
             </div>
-            
+            <div class="proyecto__imagenes">
+                <div>
+                <img src="img/Screenshot_Etch_1.png" alt="">
+            </div>
+                <!-- <img src="img/Screenshot_Etch_2.png" alt=""> -->
+            </div>   
         </div>
+    </section>
 
+    <section class="section-contacto">
+        <h2 class="encabezado-contacto">Contacto</h2>
+        <form action="./registro_concluido.html" class="form">
+                <div class="field">
+                    <label class="input-label" for="name">Nombre</label>
+                    <input name="name" id="name" class="input" type="text" placeholder="Nombre" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@mail.com">
+                </div>
+
+                <div class="field">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" placeholder="Escriba el asunto">
+                </div>
+
+                <div class="field">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" name="" id="mensaje" placeholder="Escriba su mensaje">
+                </div>   
+            <button class="btn-enviar btn">Enviar mensaje</a>
+        </form>
     </section>
 
 
-
-    <section></section>
+    <footer class="footer">
+        <p>Desarrollado por Jose Gomez</p>
+        <p>2022</p>
+    </footer>
 </body>
 </html>
