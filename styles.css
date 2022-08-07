@@ -11,7 +11,7 @@ ul{
 .section-nav{
     background-color: rgb(255, 93, 34);
     padding: 1rem 1.5rem;
-    color: ;
+    
 }
 
 .menu-de-navegacion{
@@ -25,6 +25,8 @@ ul{
     display: flex;
     gap: 2rem;
 }
+
+
 
 .section-nav__lista a{
   color: #fff;
@@ -62,6 +64,13 @@ a{
 .presentacion__lista{
     display: flex;
     justify-content: space-around;
+}
+
+.presentacion__lista li{
+  border: 2px solid rgb(255, 93, 34);
+  padding: 10px 0;
+  width: 100px;
+  background-color: #fef1e6;
 }
 
 .presentacion__lista a {
@@ -287,5 +296,76 @@ ion-icon {
     justify-content:center;
     align-items: center;
     background-color: #fef1e6;
+  }
+
+
+
+
+  /* MEDIA QUERIES*/
+
+  @media (max-width:768px){
+    .skills-container, .hoobbies-container{
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+    .skills-hobbies{
+      height: 90vh;
+    }
+
+    .form{
+      width: 600px;
+    }
+  } 
+
+
+  @media (max-width:480px){
+    
+
+    .menu-de-navegacion{
+      flex-direction: column;
+      gap: 20px;
+      height: 18vh;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+
+    .section-nav__lista{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .section-presentacion{
+      height: 43vh;
+    }
+
+    .skills-hobbies{
+      height: 120vh;
+    }
+
+    .formacion-container{
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .formacion-card{
+      width: 380px;
+      max-width: 460px;
+    }
+
+    .proyecto{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .proyecto__imagenes{
+      width: 90%;
+    }
+
+    .form{
+      width: 90%;
+    }
   }
   
